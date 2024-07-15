@@ -8,6 +8,7 @@ package holamundo;
  *
  * @author Yomi
  */
+import java.util.Scanner;
 public class HolaMundo {
 
     /**
@@ -17,6 +18,13 @@ public class HolaMundo {
         // TODO code application logic here
         System.out.println("Hola Mundo");
         System.out.println("Hola 2");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Ingresa tu nombre:");
+        String nombre = teclado.nextLine();
+        
+        System.out.println("Hola"+" "+ nombre +" "+"!");
     }
     
 }
